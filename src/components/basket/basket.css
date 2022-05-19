@@ -1,0 +1,58 @@
+.containerBasket {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    background: linear-gradient(to bottom left, rgb(11 104 219), #f46d40)
+}
+.blocks {
+    display: flex;
+    width: 500px;
+    height: 300px;
+    justify-content: space-evenly;
+    align-items: center;
+    line-height: 43px;
+    background: linear-gradient(to bottom left, rgb(160 185 215), #ffffff);
+}
+.btnBasket {
+    position: absolute;
+    top: 24px;
+    left: 22px;
+    padding: 20px;
+    cursor: pointer;
+    border: none;
+    background: linear-gradient(to bottom left, rgb(73, 130, 200), #f46d40);
+    transition: all 0.5s;
+    box-shadow: 1px 3px 15px blue;
+    border-bottom-left-radius: 30px;
+    border-top-right-radius: 30px;
+}
+.btnBasket:hover {
+    box-shadow: 1px 3px 15px;
+    color: #fff;
+    transition: all 0.5s;
+}
+.btnBasket::before,
+.btnBasket:after {
+    content: "";
+    position: absolute;
+    left: -1%;
+    right: 0%;
+    width: 20px;
+    bottom: 34.21%;
+    color: #fff;
+}
+.counter button  {
+    box-shadow: 5px 10px 20px rgb(0 0 0/30%), -5px -10px 20px hsl(0deg 0% 100%/50%);
+    background: radial-gradient(circle at 73% 30%, #f3ffff, #0c78b7);
+    border: none;
+    width: 35px;
+    height: 35px;
+    border-radius: 100%;
+    font-size: 20px;
+    cursor: pointer;
+    transition: all 0.5s;
+}
+.counter button:focus {
+    box-shadow: 0px 1px 1px 1px rgb(0 0 0/30%);
+    transition: all 0.2s;
+}
